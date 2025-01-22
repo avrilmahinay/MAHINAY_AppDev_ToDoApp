@@ -1,10 +1,11 @@
 {
   "expo": {
-    "name": "ToDoApp",
+    "name": "ToDoList",
     "slug": "ToDoApp",
+    "scheme": "com.Todo.app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icons.jpg",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -17,12 +18,24 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icons.jpg",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ebxx.ToDoApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f4b8ecd0-c796-4b67-909f-689c778422fb"
+      }
     }
   }
 }
